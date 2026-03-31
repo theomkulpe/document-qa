@@ -6,10 +6,10 @@ from fastapi.responses import StreamingResponse
 import shutil, os
 import tempfile
 
-from ingestion import ingest
-from vectorstore import add_chunks
-from session import new_session, add_messages, get_history
-from rag import stream_answer
+from backend.ingestion import ingest
+from backend.vectorstore import add_chunks
+from backend.session import new_session, add_message, get_history
+from backend.rag import stream_answer
 
 app = FastAPI()
 
