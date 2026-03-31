@@ -1,5 +1,5 @@
 from groq import Groq
-from vectorstore import retrieve
+from backend.vectorstore import retrieve
 
 client = Groq()
 
